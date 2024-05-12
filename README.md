@@ -30,10 +30,6 @@ For an enhanced development experience, consider installing the following extens
 2. Run `npm run start` for production or `npm run dev` for development.
 3. Configure your hosting platform to serve the app.
 
-## Templates
-
-For more templates and resources, visit our [GitHub repository](https://github.com/example/repository).
-
 ## Hero
 
 Connect with Me and Stay Updated:
