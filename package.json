@@ -1,0 +1,39 @@
+{
+  "name": "ExpressJS + EJS + TailwindCSS Boilerplate",
+  "version": "1.0.0",
+  "description": "Kickstart your EJS Projects With this Boilerplate",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node app",
+    "build": "npm install && npm audit fix --force",
+    "tailwind:css": "postcss public/stylesheets/tailwind.css -o public/stylesheets/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhelafrank/EJS-Project-Boilerplate"
+  },
+  "author": "dhelafrank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhelafrank/EJS-Project-Boilerplate/issues"
+  },
+  "homepage": "https://ejsboilerplate.render.com",
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "urlencode": "^2.0.0",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
