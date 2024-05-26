@@ -46,6 +46,7 @@ const meta = (req, dynamicPageSpecifications) => {
             <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
             <script src="https://kit.fontawesome.com/63483fd584.js" crossorigin="anonymous"></script>
             <link rel="stylesheet" href="${pageCSS ? pageCSS : ""}">
+            <link rel="stylesheet" href="/stylesheets/style.css">
 `
 }
 module.exports = meta

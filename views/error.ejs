@@ -1,3 +1,26 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-metaTags%>
+</head>
+<body>
+<div class="flex flex-col items-center justify-center h-screen bg-gray-100 dark:bg-gray-900">
+    <div class="text-center space-y-4">
+      <h1 class="text-8xl font-bold text-gray-900 dark:text-gray-50"><%= error.status %></h1>
+      <p class="text-lg text-gray-500 dark:text-gray-400">Oops, the page you're looking for doesn't exist.<br>Inspect to see error details</p>
+      <a
+        class="inline-flex items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+        href="/"
+        rel="ugc"
+      >
+        Go back home
+      </a>
+    </div>
+  </div>
+    <%-header%>
+    <h1 class="error-information"><%= message %></h1>
+    <pre class="error-information"><%= error.stack %></pre>
+    <%-footer%>
+</body>
+</html>
+

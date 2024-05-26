@@ -1,0 +1,5 @@
+@import url("./globals.css") all;
+
+.error-information {
+    display: none;
+}

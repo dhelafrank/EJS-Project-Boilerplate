@@ -4,13 +4,11 @@ const homeScreenContents = require("../templates/screens/home")
 const header = require("../templates/components/header")
 const footer = require("../templates/components/footer")
 
-const homeScreen = (req, res, next) => {
+const homeScreen = async (req, res, next) => {
     res.render(
-        'index',
-        {
+        'index', {
             metaTags: meta(
-                req,
-                {
+                req, {
                     pageTitle: `${process.env.PROJECT_NAME}`,
                     pageCSS: '/stylesheets/home.css'
                 }
@@ -22,4 +20,22 @@ const homeScreen = (req, res, next) => {
         }
     )
 }
-module.exports = { homeScreen}
+
+const errorScreen = async (req) => {
+    return {
+        metaTags: meta(
+            req, {
+                pageTitle: `Error | ${process.env.PROJECT_NAME}`,
+                pageCSS: '/stylesheets/error.css'
+            }
+        ),
+        header: header(),
+        footer: footer()
+    }
+}
+
+
+module.exports = {
+    homeScreen,
+    errorScreen
+}
